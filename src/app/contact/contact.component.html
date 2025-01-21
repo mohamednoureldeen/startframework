@@ -1,0 +1,54 @@
+<div class="section">
+  <div class="container p-5">
+    <div class="header m-5 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="text-uppercase title">portfolio component</h1>
+      <div class="divider">
+        <span class="star"><i class="fas fa-star"></i></span>
+      </div>
+    </div>
+    <form class="w-75 mx-auto">
+      <div class="mb-3   form-group">
+        <input 
+          type="text" 
+          id="name" 
+          name="username"
+        />
+        <label for="name" >User Name :</label>
+      </div>
+      <div class="mb-3  form-group">
+        <input 
+          type="text" 
+          id="name" 
+          name="userage"
+        />
+        <label for="name" >User Age :</label>
+      </div>
+      <div class="mb-3  form-group">
+        <input 
+          type="text" 
+          id="name" 
+          name="useremail"
+        />
+        <label for="name" >User Email :</label>
+      </div>
+      <div class="mb-4  form-group">
+        <input 
+          type="text" 
+          id="name" 
+          name="userpassword"
+        />
+        <label for="name" >User Password :</label>
+      </div>
+      <button
+        type="submit"
+        (click)="onSubmit($event)"
+        class=" btn-primary"
+      >
+        Send Message
+      </button>
+    </form>
+    
+  </div>
+</div>
+
+

@@ -1,0 +1,69 @@
+
+
+<div class="section">
+    <div class="container p-5">
+    <div class="header m-5 ">
+        <h1 class="text-uppercase">portfolio component</h1>
+        <div class="divider">
+          <span class="star"><i class="fas fa-star"></i></span>
+        </div>
+    </div>
+    <div class="row g-3">
+        <div class=" col-md-4"> 
+            <div class="img-card" (click)="openImage('images/poert1.png')">
+                <div class="over-lay"><i class="fa-solid fa-plus"></i></div>
+                <div class="img-port">
+                  <img src="images/poert1.png" alt="Portfolio Image">
+                </div>
+              </div>
+        </div>
+        <div class=" col-md-4"> 
+            <div class="img-card" (click)="openImage('images/port2.png')">
+                <div class="over-lay"><i class="fa-solid fa-plus"></i></div>
+                <div class="img-port">
+                    <img src="images/port2.png" alt="Portfolio Image">
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4"> 
+            <div class="img-card" (click)="openImage('images/port3.png')">
+                <div class="over-lay"><i class="fa-solid fa-plus"></i></div>
+                <div class="img-port">
+                    <img src="images/port3.png" alt="Portfolio Image">
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4"> 
+            <div class="img-card" (click)="openImage('images/poert1.png')">
+                <div class="over-lay"><i class="fa-solid fa-plus"></i></div>
+                <div class="img-port">
+                  <img src="images/poert1.png" alt="Portfolio Image">
+                </div>
+              </div>
+        </div>
+        <div class=" col-md-4"> 
+            <div class="img-card" (click)="openImage('images/port2.png')">
+                <div class="over-lay"><i class="fa-solid fa-plus"></i></div>
+                <div class="img-port">
+                    <img src="images/port2.png" alt="Portfolio Image">
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4"> 
+            <div class="img-card" (click)="openImage('images/port3.png')">
+                <div class="over-lay"><i class="fa-solid fa-plus"></i></div>
+                <div class="img-port">
+                    <img src="images/port3.png" alt="Portfolio Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Overlay لعرض الصورة -->
+<div class="image-modal" *ngIf="selectedImage" (click)="closeImage()">
+    <img [src]="selectedImage" class="modal-image">
+</div>
+
+

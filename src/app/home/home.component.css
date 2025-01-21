@@ -1,0 +1,30 @@
+section {
+  background-color: #1abc9c;
+  color: white;
+  padding: 40px 0;
+
+}
+.container {
+  min-height: 600px;
+  margin: auto;
+ }
+.divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 70%;
+  max-width: 600px;
+  height: 4px;
+  background-color: white; 
+
+  .star {
+    position: absolute;
+    background-color: #1abc9c; 
+    padding: 0 10px;
+    font-size: 20px;
+    color: white;
+  }
+}
+
